@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+    Name: Emmanuel Farrar   
+    Date: 4/25/2020
+    Title: Contact Us Form
+
+    Description: URL: https://www.youtube.com/watch?v=WY4rvU4ImgE
+    https://codepen.io/RajRajeshDn/pen/QRjwpG
+    https://github.com/codingmarket07/Contact-us-form-validation-Using-Javascript-M8
+
+    Youtube video on creating a Contact Us form using JS, HTML, and CSS. This was done to practice creating forms, work with
+    JS, CSS, and HTML.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <title>App Title</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Contact us</h2>
+        <div id="error_message">
+           
+        </div>
+        <form action="" id="myform" onsubmit = "return validate();">
+          <div class="input_field">
+              <input type="text" placeholder="Name" id="name">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Subject" id="subject">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Phone" id="phone">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class="input_field">
+              <textarea placeholder="Message" id="message"></textarea>
+          </div>
+          <div class="btn">
+              <input type="submit">
+          </div>
+        </form>
+      </div>
+    
+</body>
+
+</html>
